@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EV vs ICE Energy Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🚗 EV vs ICE</h1>
+<h2>미래 자동차 에너지 시뮬레이터</h2>
+
+<div class="card">
+
+<h3 id="car">차량 선택</h3>
+
+<button onclick="selectEV()">🔋 전기차</button>
+<button onclick="selectICE()">⛽ 휘발유차</button>
+
+<hr>
+
+<p>🔋 에너지 : <span id="energy">-</span></p>
+<p>🌱 환경 점수 : <span id="eco">-</span></p>
+<p>💰 비용 : <span id="money">-</span>만원</p>
+<p>⚡ 회생제동 회수량 : <span id="regen">-</span> kWh</p>
+
+<h3 id="event">
+차량을 선택하세요
+</h3>
+
+<button onclick="normal()">일반 제동</button>
+<button onclick="regen()">회생제동 사용</button>
+
+<button onclick="result()">결과 보기</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
